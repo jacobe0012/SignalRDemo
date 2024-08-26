@@ -47,9 +47,10 @@ namespace MessagePack.Resolvers
 
         static GeneratedResolverGetFormatterHelper()
         {
-            lookup = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(1)
+            lookup = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(2)
             {
                 { typeof(global::MyData), 0 },
+                { typeof(global::PlayerData), 1 },
             };
         }
 
@@ -64,6 +65,7 @@ namespace MessagePack.Resolvers
             switch (key)
             {
                 case 0: return new MessagePack.Formatters.MyDataFormatter();
+                case 1: return new MessagePack.Formatters.PlayerDataFormatter();
                 default: return null;
             }
         }

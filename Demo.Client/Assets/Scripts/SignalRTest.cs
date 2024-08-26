@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Best.SignalR;
 using Best.SignalR.Encoders;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SignalRTest : MonoBehaviour
 {
@@ -11,14 +12,14 @@ public class SignalRTest : MonoBehaviour
 
     async void Start()
     {
-        hub = new HubConnection(new Uri("https://localhost:7176/LoginHub"), new JsonProtocol(new LitJsonEncoder()));
+        hub = new HubConnection(new Uri("https://192.168.28.112:7176/LoginHub"), new JsonProtocol(new LitJsonEncoder()));
         hub.ReconnectPolicy = new DefaultRetryPolicy();
         await hub.ConnectAsync();
 
         await hub.SendAsync("Login", new MyData
         {
             Age = 1,
-            FirstName = "unity001lastname",
+            FirstName = $"{Random.Range(1, 5)}",
             LastName = "unity001"
         });
         Debug.Log("Connected!");
