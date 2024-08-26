@@ -973,24 +973,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MLoong\\.nuget\\packages\\": {}
+    "C:\\Users\\Jaco\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DotnetProjects\\Demo\\Demo.Server\\Demo.Server.csproj",
+      "projectUniqueName": "E:\\GitProjects\\SignalRDemo\\Demo.Server\\Demo.Server.csproj",
       "projectName": "Demo.Server",
-      "projectPath": "D:\\DotnetProjects\\Demo\\Demo.Server\\Demo.Server.csproj",
-      "packagesPath": "C:\\Users\\MLoong\\.nuget\\packages\\",
-      "outputPath": "D:\\DotnetProjects\\Demo\\Demo.Server\\obj\\",
+      "projectPath": "E:\\GitProjects\\SignalRDemo\\Demo.Server\\Demo.Server.csproj",
+      "packagesPath": "C:\\Users\\Jaco\\.nuget\\packages\\",
+      "outputPath": "E:\\GitProjects\\SignalRDemo\\Demo.Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MLoong\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jaco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1003,6 +1006,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
