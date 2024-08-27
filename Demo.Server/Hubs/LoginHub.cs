@@ -12,6 +12,7 @@ public class LoginHub : Hub
         this._redis = redis;
     }
 
+
     public async void Login(MyData name)
     {
         var db = _redis.GetDatabase();
